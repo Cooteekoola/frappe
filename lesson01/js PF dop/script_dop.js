@@ -1,9 +1,13 @@
-let num = '33721';
+let num = [3, 3, 7, 2, 1];
+let sum = (accumulator, currentValue) => accumulator + currentValue;
+console.log(num.reduce(sum));
 
-let x = +num[0] * +num[1] * +num[2] * +num[3] * +num[4];
-console.log(x);
+// let num = '33721';
+// let x = +num[0] * +num[1] * +num[2] * +num[3] * +num[4];
 
-let z = x ** 3;
+// console.log(x);
+
+let z = num.reduce(sum) ** 3;
 console.log(z);
 
 let n = z.toString();
