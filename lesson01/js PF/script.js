@@ -1,5 +1,5 @@
 let money = prompt('Ваш бюджет на месяц?'),
-    time = prompt('Введите дату в формате YYYY-MM-DD');
+    time = prompt('Введите дату в формате YYYY-MM-DD'),
     question1 = prompt('Введите обязательную статью расходов в этом месяце'),
     question2 = +prompt('Во сколько обойдется?'),
     question3 = prompt('Введите обязательную статью расходов в этом месяце'),
@@ -11,7 +11,7 @@ let appData = {
   timeData: time,
   expenses: {},  
   optionalExpenses: {},
-  income: [''],
+  income: [],
   savings: false
 };
 
