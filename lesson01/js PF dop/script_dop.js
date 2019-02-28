@@ -9,4 +9,4 @@ console.log(res.reduce(sum));
 console.log(z);
 console.log(typeof(n));
 
-alert(n[0]+n[1]);
+alert(n.substr(0, 2));
