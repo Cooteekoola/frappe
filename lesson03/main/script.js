@@ -56,8 +56,8 @@ detectLevel();
 
 function chooseOptExpenses() {
   for (let i=0; i<3; i++) {
-    let num = prompt('Номер'),
-        que = prompt('Статья необязательных расходов?');
+    let num = +prompt('Номер'),
+        que = +prompt('Статья необязательных расходов?');
     
     appData.optionalExpenses[num] = que;
   }
