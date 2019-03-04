@@ -54,7 +54,6 @@ function detectLevel(){
 }
 detectLevel();
 
-
 function chooseOptExpenses() {
   for (let i=0; i<3; i++) {
     let num = prompt('Номер'),
