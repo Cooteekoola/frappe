@@ -1,13 +1,17 @@
 // let week = ['mon', 'tue', 'wen', 'thu', 'fri', 'sat', 'sun'];
-//   for (let i=0; i < 7; i++) {
-//     if (week[i].substr(0, 1) == 's') {
-//        document.body.innerHTML += '<b>' + week[i] + '</b>' + '<br>';
+//   for (let i=0; i < week.length; i++) {
+//     let div = document.createElement('div');
+//     document.body.appendChild(div); 
+//     if (week[i] == 'sat' || week[i] == 'sun'){   
+//       div.style.fontWeight = "bold";
+//       div.innerHTML = week[i];
 //     } 
 //       else if (i==4) {
-//       document.body.innerHTML += '<i>' + week[i] + '</i>' + '<br>';
+//         div.style.fontStyle = "italic"; 
+//         div.innerHTML = week[i];
 //     }
 //     else {
-//       document.body.innerHTML += week[i] + '<br>';
+//       document.body.innerHTML += week[i];
 //     }
 //     console.log(week[i]);
 //   }
@@ -28,17 +32,23 @@
 
 
 
-let week = ['mon', 'tue', 'wen', 'thu', 'fri', 'sat', 'sun'];
+
+
+
+  let week = ['mon', 'tue', 'wen', 'thu', 'fri', 'sat', 'sun'];
   for (let i=0; i < week.length; i++) {
     let div = document.createElement('div');
     document.body.appendChild(div); 
+    let date = new Date(2019, 2, 2),
+        weekday = date.getUTCDay();
+    
     if (week[i] == 'sat' || week[i] == 'sun'){   
       div.style.fontWeight = "bold";
       div.innerHTML = week[i];
     } 
-      else if (i==4) {
+      else if (i == weekday) {
         div.style.fontStyle = "italic"; 
-        div.innerHTML = week[i];
+        div.innerHTML = week[i];  
     }
     else {
       document.body.innerHTML += week[i];
