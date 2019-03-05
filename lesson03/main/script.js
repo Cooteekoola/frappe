@@ -16,7 +16,7 @@ let appData = {
   expenses: {},  
   optionalExpenses: {},
   income: [],
-  savings: true,
+  savings: true
 };
 
 function detectDayBudget(){
