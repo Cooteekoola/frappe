@@ -27,7 +27,7 @@ let appData = {
           console.log("done");
           appData.expenses[a] = b;
         } else {
-          i = i - 1;
+          i--;
         }
     }
   }, 
@@ -74,7 +74,7 @@ let appData = {
       }           
     } 
     appData.income.forEach(function(item, i, mass){
-      console.log(i++ + "Способы доп. заработка: " + item);
+      console.log(i+1 + "Способы доп. заработка: " + item);
     });  
   }
 };
